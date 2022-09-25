@@ -1,0 +1,21 @@
+div#header-center{/*div는 생략 가능*/
+  margin : 0 auto; width : 1080px;
+}
+
+#header-search > h1 {/* > 는 직계 자식만 선택 가능 */
+  width: 280px;
+  display: inline-block; /*div의 기본 설정은 block - 가로 100% 공간 차지. 이걸 없애는 속성*/
+}
+
+#header-search h2 {
+  display: none;
+}
+
+#header-search fieldset {
+  width: 520px;
+  display: inline-block;
+}
+/* #header-center h1 {}
+직계 자식이 아닌 '자손'들은 > 필요하지 않음.
+직계 자식들은 > 가 반드시 필요하지 않음. 있던 없던 상관 x
+*/
