@@ -76,6 +76,11 @@ nav ul {
   list-style: none;
 }
 
+nav li:first-child {
+  display: inline;
+  float: left;
+}
+
 .blind { /* class 선언 - id는 정말 고유한 것이지만 class는 여러 개의 tag에 적용 가능. */
   position: absolute;
   clip: rect(0 0 0 0);
@@ -91,6 +96,14 @@ nav ul {
   font-weight: 700;
   text-decoration: none;
   color: #03c75a;
+}
+
+.nav_nocolor {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
 }
 
 .nav_item {
