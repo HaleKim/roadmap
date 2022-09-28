@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+html body {
+  margin: 0;
+  border: 0;
+}
+
+.center-align{/*div는 생략 가능*/
+  margin : 0 auto;
+  width : 1080px;
+}
+
+#header-top {
+  float: right;
+  margin-bottom: 30px;
+}
+
+#header-search h1 {/* > 는 직계 자식만 선택 가능 */
+  width: 222px;
+  height: 52px;
+  display: inline-block; /*div의 기본 설정은 block - 가로 100% 공간 차지. 이걸 없애는 속성*/
+  background-image: url(./로고.png);
+  background-position: 0 -158px;
+  background-repeat: no-repeat;
+  background-size: 457px 434px;
+  vertical-align: middle;
+}
+
+/* #header-center > h1 {}
+직계 자식이 아닌 '자손'들은 > 필요하지 않음.
+직계 자식들은 > 가 반드시 필요하지 않음. 있던 없던 상관 x
+*/
+
+#header-search a {
+  text-decoration: none;
+  float: left;
+}
+
+#header-search fieldset {
+  width: 586px;
+  height: 56px;
+  display: inline-block;
+  border: 2px solid #19ce60;
+  position: relative;
+  margin-left: 17px;
+}
+
+#header-search fieldset input {
+  width: 444px;
+  height: 24px;
+  border: none;
+  padding: none;
+  outline: none;
+}
+
+#header-search fieldset button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 56px;
+  background-color: #19ce60;
+  border : none;
+  cursor: pointer;
+}
+
+#button_image {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-image: url(./로고.png);
+  background-size: 457px 434px;
+  background-position: -420px 0;
+  background-repeat: no-repeat;
+  vertical-align: top;
+}
+
+nav ul {
+  margin: 0;
+  border: 0;
+  list-style: none;
+}
+
+nav li:first-child {
+  display: inline;
+  float: left;
+}
+
+.blind { /* class 선언 - id는 정말 고유한 것이지만 class는 여러 개의 tag에 적용 가능. */
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.nav {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #03c75a;
+}
+
+.nav_nocolor {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav_item {
+  display: inline;
+  float: left;
+  margin-left: 12px;
+}
+
+.ico_mail {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  background-image: url(./로고.png);
+  background-size: 457px 434px;
+  background-position: -420px -73px;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  margin: 3px 9px 0 0;
+}
+
+.nav_shopping {
+  position: relative;
+  top: 5px;
+  width: 24px;
+  height: 20px;
+  background-image: url(./로고.png);
+  background-size: 457px 434px;
+  background-position: -154px -389px;
+  background-repeat: no-repeat;
+  content: '';
+  display: block;
+}
+
+.nav_shoplive {
+  position: relative;
+  top: 5px;
+  width: 54px;
+  height: 20px;
+  background-image: url(./로고.png);
+  background-size: 457px 434px;
+  background-position: -202px -299px;
+  background-repeat: no-repeat;
+  content: '';
+  display: block;
+}
