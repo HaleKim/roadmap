@@ -10,6 +10,7 @@ html body {
 .center-align{/*div는 생략 가능*/
   margin : 0 auto;
   width : 1080px;
+  height: 160px;
 }
 
 #header-top {
@@ -25,7 +26,8 @@ html body {
   background-position: 0 -158px;
   background-repeat: no-repeat;
   background-size: 457px 434px;
-  vertical-align: middle;
+  vertical-align: top;
+  content: '';
 }
 
 /* #header-center > h1 {}
